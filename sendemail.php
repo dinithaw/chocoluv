@@ -11,7 +11,9 @@
     $message    = @trim(stripslashes($_POST['message'])); 
 
     $email_from = $email;
-    $email_to = 'email@email.com';//replace with your email
+    $email_to = 'our*email@email.com';//replace with your email
+    //we have to create separete email for this && also we have to change the email in contact.html
+    //we have to create seperate social media accounts for this
 
     $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
