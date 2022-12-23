@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
   <title>ChocoLuv ♥ | Team</title>
   <link rel="icon" type="image/x-icon" href="/images/titlepic.svg">
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
@@ -80,12 +101,35 @@
       padding: 5px;
     }
 
+    .bganimation {
+      animation: animateBg 6s linear infinite;
+      background-image: linear-gradient(0deg, #d76d0a,#e68c33, #f4bf62, #d46b08,#e68c33);
+      background-size: 100% 400%;
+    }
+    @keyframes animateBg {
+      0% { background-position: 0% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+
 
   </style>
 </head>
 
 
-<body>
+<body class="bganimation">
+
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <h2>&lt;<u>  Home</u></h2>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
 <div class="wrapper">
   <h1>ChocoLuv Team ♥</h1>
   <div class="team">
@@ -101,7 +145,7 @@
 
     <div class="team_member">
       <div class="team_img">
-        <img src="images/default.jpg" alt="Team_image">
+        <img src="images/nadil.jpg" alt="Team_image">
       </div>
       <h3>Nadil Lokuhetty</h3>
       <p class="role">Developer</p>
@@ -141,7 +185,7 @@
 
     <div class="team_member">
       <div class="team_img">
-        <img src="images/default.jpg" alt="Team_image">
+        <img src="images/ravindi.jpg" alt="Team_image">
       </div>
       <h3>Ravindi Wickramasinghe</h3>
       <p class="role">Content Management</p>
