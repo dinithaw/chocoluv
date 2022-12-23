@@ -32,12 +32,3 @@ $('.chocolate_container').slick({
 
     ]
 });
-
-// google_map js
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(6.821514444780957, 80.04158286549186),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
