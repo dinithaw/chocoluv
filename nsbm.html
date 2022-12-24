@@ -39,11 +39,39 @@
       color: #0c0c0c;
       background-color: #a0ff88;
     }
+
+
+    .bganimation{
+      animation: animateBg 12s linear infinite;
+      background-image: linear-gradient(45deg, #2fd90b, #a0ff88, #2fd90b);
+      background-size: 400% 400%;
+    }
+    @keyframes animateBg {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h2.f{
+      font-family: Arial;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #0c0c0c;
+      margin-bottom: 1.5rem;
+    }
+
   </style>
+
 
 </head>
 
-<body class="sub_page">
+<body class="sub_page bganimation">
 
 <div class="main_body_content">
 
@@ -53,23 +81,29 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            ChocoLux
+            <b>ChocoLuv</b> ♥
           </a>
-          </a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html"> About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nsbm.html">NSBM</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="chocolate.html">Chocolates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="testimonial.html">Testimonial</a>
@@ -80,12 +114,14 @@
             </ul>
             <div class="quote_btn-container">
               <form class="form-inline">
+                <a href="javascript:alert('Sorry Search Function is Still Under Construction :)');"
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
+                </a>
               </form>
-              <a href="">
-                <i class="fa fa-user" aria-hidden="true"></i>
+              <a href="javascript:alert('This Website Was Created by DLW');">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -103,13 +139,25 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                About Our Company
+              <h2 class="f">
+                NATIONAL SCHOOL OF BUSINESS MANAGEMENT
+                <hr>
               </h2>
             </div>
             <p>
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text, </p>
-            <a href="#">
+              Welcome to NSBM,
+              <br><br>
+              NSBM Green University Town is the first ever green university in South Asia and sets an example for the whole South Asia by paving the way for environmental sustainability. The university is open for both national and international student community and it has turned a new chapter in Sri Lankan higher education.
+              <br><br>
+              NSBM Green University Town is established under the State Ministry of Skills Development, Vocational Education, Research & Innovations and it is renowned for its world-class academic offerings. This state-of-the-art university offers nationally and internationally recognized, UGC approved degree programmes and foreign degree programmes in three faculties: Management, Computing and Engineering.
+              <br><br>
+              The university is spread over an area of 26 acres and the massive university complex was built with the intention of providing an opportunity for both national and international students to have a fully-fledged education in Sri Lanka. Currently around 9000 students are studying at the university and the highly qualified local and foreign lecturers who teach at the university are committed to prepare these undergraduates to face any challenge the world has to offer. The university’s commitment to excellence in education extends beyond course delivery since the university has created mutually beneficial relationships with the industry to provide students with opportunities to get exposure to the real- world workplaces.
+              <br><br>
+              Inspired by the vision of making Sri Lanka the best educational hub in Asia,
+              NSBM Green University Town is dedicated to gift the future leaders to the world with its fully-fledged university.
+              <br>
+            </p>
+            <a target="_blank" href="https://www.nsbm.ac.lk/">
                 <span>
                   Read More
                 </span>
@@ -119,7 +167,10 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="images/nsbm.jpg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="images/nsbm2.png" alt="">
           </div>
         </div>
       </div>
@@ -133,27 +184,15 @@
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row info_form_social_row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-        </div>
+
         <div class="col-md-4 col-lg-3">
 
           <div class="social_box">
             <a href="">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://instagram.com/dinitha.w/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -165,11 +204,17 @@
               Menu
             </h4>
             <div class="info_links_menu">
-              <a href="index.html">
+              <a href="#">
                 Home
               </a>
               <a href="about.html">
                 About
+              </a>
+              <a href="nsbm.html">
+                NSBM
+              </a>
+              <a href="team.html">
+                Our Team
               </a>
               <a href="chocolate.html">
                 Chocolates
@@ -190,7 +235,9 @@
             </h4>
             <div class="insta_box">
               <div class="img-box">
-                <img src="images/insta-img.png" alt="">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
+                  <img src="images/insta-img.png" alt=" just a random text ">
+                </a>
               </div>
               <p>
                 long established fact that a reader
@@ -198,7 +245,9 @@
             </div>
             <div class="insta_box">
               <div class="img-box">
-                <img src="images/insta-img.png" alt="">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
+                  <img src="images/insta-img.png" alt=" just a random text ">
+                </a>
               </div>
               <p>
                 long established fact that a reader
@@ -221,22 +270,28 @@
             Contact Us
           </h4>
           <div class="info_contact">
-            <a href="">
+            <a href="https://goo.gl/maps/DB7bvNVjoYdo4QrY7">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                  Location
+                  <u>NSBM Green University Town, Pitipana, Homagama</u>
                 </span>
             </a>
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=947769696969&text=Can%20I%20get%20a%20quote?">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span>
+                  <u>WhatsApp For Quotes 07769696969</u>
+                </span>
+            </a>
+            <a href="tel:5554280940">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                  Call +01 1234567890
+                  <u>Call 5554280940</u>
                 </span>
             </a>
-            <a href="">
+            <a href="mailto: ouremail@gmail.com">
               <i class="fa fa-envelope"></i>
               <span>
-                  demo@gmail.com
+                  <u>ouremail@gmail.com</u>
                 </span>
             </a>
           </div>
@@ -255,7 +310,7 @@
     <div class="col-md-11 col-lg-8 mx-auto">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="https://dinitha.me/"> DLW </a>
       </p>
     </div>
   </div>
