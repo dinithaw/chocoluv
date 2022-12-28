@@ -1,9 +1,9 @@
 <?php
   // Connect to the database
   $servername = "localhost";
-  $username = "username";
-  $password = "password";
-  $dbname = "database_name";
+  $username = "root";
+  $password = "root123";
+  $dbname = "db_contact";
 
   $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -19,7 +19,9 @@
   $message = mysqli_real_escape_string($conn, $_POST['message']);
   
   // Attempt insert query execution
-  $sql = "INSERT INTO quotes (name, tel, email, message) VALUES ('$name','$tel','$email','$message')";
+  $sql = "INSERT INTO `quotes` (`ID`, `name`, `tel`, `email`, `message`) VALUES ('0', '$name','$tel','$email','$message')";
+  
+  //check if query was successful
   if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
   } else{
