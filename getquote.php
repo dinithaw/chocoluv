@@ -13,10 +13,13 @@
   }
 
   // Escape user inputs for security
+  $name = mysqli_real_escape_string($conn, $_POST['name']);
+  $tel = mysqli_real_escape_string($conn, $_POST['tel']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
-
+  $message = mysqli_real_escape_string($conn, $_POST['message']);
+  
   // Attempt insert query execution
-  $sql = "INSERT INTO emails (email) VALUES ('$email')";
+  $sql = "INSERT INTO quotes (name, tel, email, message) VALUES ('$name','$tel','$email','$message')";
   if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
   } else{
