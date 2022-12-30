@@ -5,19 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-.promocode {
-  background-color: #f7eecb;
-  color: #4a4646;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: Consolas, monospace;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #0c0c0c;
-  margin: 0.5rem;
-  cursor: pointer;
-}
-
 .layout_padding {
   padding: 90px 0;
 }
@@ -556,6 +543,19 @@ a:focus {
 
 .chocolate_section .slick-next:before {
   content: "\f061";
+}
+
+.promocode {
+  background-color: #f7eecb;
+  color: #4a4646;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Consolas, monospace;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #0c0c0c;
+  margin: 0.5rem;
+  cursor: pointer;
 }
 
 .offer_section {
