@@ -492,16 +492,16 @@
               </div>
               <form name="getquote" method="post" action="getquote.php">
                 <div>
-                  <input type="text" placeholder="Full Name " />
+                  <input type="text" name="name" placeholder="Full Name" value="" required/>
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone number" />
+                  <input type="tel" name="tel" placeholder="Phone number" value="" required/>
                 </div>
                 <div>
-                  <input type="email" placeholder="Email" />
+                  <input type="email" name="email" placeholder="Email" value="" required/>
                 </div>
                 <div>
-                  <input type="text" class="message-box" placeholder="Message" />
+                  <input type="text" class="message-box" name="message" placeholder="Message" value="" required/>
                 </div>
                 <div class="d-flex ">
                   <button>
